@@ -168,7 +168,7 @@ class HomeSection extends StatelessWidget {
                   // linkedin
                   GestureDetector(
                     onTap: () async {
-                      const url = 'https://linkedin.com/in/mirzamahmudhossan/';
+                      const url = 'https://www.linkedin.com/in/humayun-kabir-338381229/';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       } else {
@@ -182,7 +182,7 @@ class HomeSection extends StatelessWidget {
                   // github
                   GestureDetector(
                     onTap: () async {
-                      const url = 'https://github.com/mirzamahmud';
+                      const url = 'https://github.com/humayunkabir11';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       } else {
@@ -194,7 +194,7 @@ class HomeSection extends StatelessWidget {
                   const Gap(24),
 
                   // stack_overflow
-                  GestureDetector(
+                 /* GestureDetector(
                     onTap: () async {
                       const url = 'https://stackoverflow.com/users/19278134/mirza-mahmud-hossan';
                       if (await canLaunchUrl(Uri.parse(url))) {
@@ -205,10 +205,10 @@ class HomeSection extends StatelessWidget {
                     },
                     child: Image.asset(AppIcons.stackOverflowIcon, color: AppColors.primaryColor, height: 32, width: 32),
                   ),
-                  const Gap(24),
+                  const Gap(24),*/
 
                   // let_code
-                  GestureDetector(
+                 /* GestureDetector(
                     onTap: () async {
                       const url = 'https://leetcode.com/Piyash_Mirza/';
                       if (await canLaunchUrl(Uri.parse(url))) {
@@ -219,12 +219,12 @@ class HomeSection extends StatelessWidget {
                     },
                     child: Image.asset(AppIcons.letCodeIcon, color: AppColors.primaryColor, height: 32, width: 32),
                   ),
-                  const Gap(24),
+                  const Gap(24),*/
 
                   // facebook
                   GestureDetector(
                     onTap: () async {
-                      const url = 'https://www.facebook.com/piyash.mirza.1';
+                      const url = 'https://www.facebook.com/developerhumo';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       } else {

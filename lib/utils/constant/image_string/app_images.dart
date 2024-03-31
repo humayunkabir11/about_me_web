@@ -1,6 +1,8 @@
 class AppImages{
 
   static const String appLogo = "assets/images/app_logo.png";
+  static const String myLogo = "assets/images/my_logo.png";
+  static const String myLogo1 = "assets/images/my_logo1.png";
 
   static const String profileImage = "assets/images/img 122.png";
   static const String myImage = "assets/images/img 122.png";

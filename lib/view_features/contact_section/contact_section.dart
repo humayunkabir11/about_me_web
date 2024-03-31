@@ -127,7 +127,7 @@ class ContactSection extends StatelessWidget {
                       const Gap(12),
                       Expanded(
                         child: Text(
-                          "mirza.dev25@gmail.com",
+                          "pythonloverkabir11@gmail.com",
                           style: GoogleFonts.montserrat(color: AppColors.primaryColor, fontSize: 20, fontWeight: FontWeight.w600),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
@@ -141,7 +141,7 @@ class ContactSection extends StatelessWidget {
                       const Icon(Icons.phone, color: AppColors.primaryColor, size: 24),
                       const Gap(12),
                       Text(
-                        "+8801846235375",
+                        "+8801968073034",
                         style: GoogleFonts.montserrat(color: AppColors.primaryColor, fontSize: 20, fontWeight: FontWeight.w600),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,

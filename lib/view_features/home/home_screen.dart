@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mirza_dev/utils/constant/color/app_colors.dart';
@@ -57,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 // TODO: navigation_menu
                 Container(
-                  width: MediaQuery.of(context).size.width, height: 80,
+                  width: MediaQuery.of(context).size.width, height: 120,
                   padding: const EdgeInsetsDirectional.symmetric(horizontal: 80, vertical: 15),
                   decoration: const BoxDecoration(
                     color: AppColors.colorWhite,
@@ -66,11 +68,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SizedBox(
-                          height: 40, width: 40,
+                      Container(
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+
+                          image: DecorationImage(image: AssetImage("assets/images/my_logo1.png"))
+
+                        ),
+                          height: 60, width: 60,
                           child: GestureDetector(
                               onTap: () => scrollToSection(navigatorKeys[0].currentContext!),
-                              child: Image.asset(AppImages.appLogo, color: AppColors.primaryColor)
+
                           )
                       ),
                       Row(
@@ -161,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       MaterialButton(
                         onPressed: () async{
-                          const url = 'https://drive.google.com/drive/folders/12QFlQfxmV3iS4-DvcMYiqyg1nek1yp7G';
+                          const url = 'https://drive.google.com/drive/folders/1nL84Hv6p3Xj6mewjJ4ZN7-QCyzLTAeBS';
                           if (await canLaunchUrl(Uri.parse(url))) {
                             await launchUrl(Uri.parse(url));
                           } else {
@@ -273,13 +281,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    Container(
+                                      decoration:BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        image: DecorationImage(image: AssetImage(AppImages.myLogo1))
+                                      ),
                                         height: 40, width: 40,
-                                        child: Image.asset(AppImages.appLogo, color: AppColors.colorWhite)
+
                                     ),
                                     const Gap(12),
                                     Text(
-                                      "Mirza Dev",
+                                      "Dev Kabir",
                                       style: GoogleFonts.montserrat(
                                         color: AppColors.colorGrey,
                                         fontWeight: FontWeight.w500,
@@ -294,7 +306,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     GestureDetector(
                                       onTap: () async{
-                                        const url = 'https://www.facebook.com/piyash.mirza.1';
+                                        const url = 'https://www.facebook.com/developerhumo';
                                         if (await canLaunchUrl(Uri.parse(url))) {
                                           await launchUrl(Uri.parse(url));
                                         } else {
@@ -308,7 +320,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     const Gap(24),
                                     GestureDetector(
                                       onTap: () async{
-                                        const url = 'https://wa.me/+8801846235375';
+                                        const url = 'https://wa.me/+8801913682281';
                                         if (await canLaunchUrl(Uri.parse(url))) {
                                         await launchUrl(Uri.parse(url));
                                         } else {
@@ -322,7 +334,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     const Gap(24),
                                     GestureDetector(
                                       onTap: () async{
-                                        const url = "https://linkedin.com/in/mirzamahmudhossan/";
+                                        const url = "https://www.linkedin.com/in/humayun-kabir-338381229/";
                                         if (await canLaunchUrl(Uri.parse(url))) {
                                           await launchUrl(Uri.parse(url));
                                         } else {
